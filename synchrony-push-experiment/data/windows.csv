@@ -1,0 +1,10 @@
+window,date_israel,reserved,sent,failed,fail_rate_pct,real_pushed_present_in_hour,baseline_mean_same_people,baseline_contaminated,notes
+1,2026-09-01,145,130,15,10.3,2,3.8,no,first window; clean pre-push baseline
+2,2026-09-08,159,143,16,10.1,4,2.8,partial,baseline Tuesdays start to include pushed Tuesdays from here on
+3,2026-09-15,170,145,25,14.7,6,3.0,partial,raw read said 7 but one was a founder/test account; 6 is the honest count
+4,2026-09-22,191,165,26,13.6,5,3.0,partial,pre-registered extension window (bar: windows 4+5 pooled >= 12)
+5,2026-09-29,197,176,21,10.7,9,,partial,best window; pooled 4+5 = 14 vs ~6 expected clears the bar (P ~ 0.3-0.5%)
+6,2026-10-06,193,161,32,16.6,8,,yes,first post-verdict window; value read taken 10-07 returned INERT
+7,2026-10-13,200,164,36,18.0,4,,yes,first below-baseline window; baseline now entirely self-contaminated
+8,2026-10-20,188,149,39,20.7,6,4.5,yes,audience begins to shrink with the user base
+9,2026-10-27,171,133,38,22.2,2,4.8,yes,weakest window; fifth consecutive failure-rate series high

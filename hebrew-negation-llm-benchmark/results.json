@@ -1,0 +1,890 @@
+[
+  {
+    "id": 1,
+    "lang": "he",
+    "field": "marital",
+    "text": "לא פרוד ולא נשוי",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "separated"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 2,
+    "lang": "he",
+    "field": "marital",
+    "text": "לא מעוניינת בגרוש או אלמן",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "divorced",
+        "widowed"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "divorced",
+            "widowed"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "divorced",
+            "widowed"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 3,
+    "lang": "he",
+    "field": "marital",
+    "text": "בלי פרודים בבקשה",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "separated"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 4,
+    "lang": "he",
+    "field": "marital",
+    "text": "אני גרושה ובשמחה אצא עם גרוש",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "single"
+          ]
+        },
+        "maritalOk": false,
+        "dealbreakersOk": true,
+        "pass": false
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 5,
+    "lang": "en",
+    "field": "marital",
+    "text": "I'm divorced and happy to date divorced people",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 6,
+    "lang": "en",
+    "field": "marital",
+    "text": "No separated or widowed people",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "separated",
+        "widowed"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated",
+            "widowed"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated",
+            "widowed"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 7,
+    "lang": "he",
+    "field": "marital",
+    "text": "לא רוצה גרושים",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "divorced"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "divorced"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "divorced"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 8,
+    "lang": "en",
+    "field": "marital",
+    "text": "I'm a widower looking for love again",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 9,
+    "lang": "he",
+    "field": "marital",
+    "text": "שלא יהיה אלמן",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "widowed"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "widowed"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "widowed"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 10,
+    "lang": "he",
+    "field": "marital",
+    "text": "אני פרודה כרגע",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": false,
+        "dealbreakersOk": true,
+        "pass": false
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 11,
+    "lang": "en",
+    "field": "marital",
+    "text": "please no one who is separated",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "separated"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 12,
+    "lang": "he",
+    "field": "marital",
+    "text": "בלי סטטוס מסובך בבקשה",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "complicated"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": false,
+        "dealbreakersOk": true,
+        "pass": false
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "complicated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 13,
+    "lang": "he",
+    "field": "marital",
+    "text": "מחפשת קשר רציני",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {},
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 14,
+    "lang": "en",
+    "field": "marital",
+    "text": "divorced is fine, widowed is fine, but not separated",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": [
+        "separated"
+      ]
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": [
+            "separated"
+          ]
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 15,
+    "lang": "en",
+    "field": "traits",
+    "text": "can't be with a smoker",
+    "expected": {
+      "dealbreakers": [
+        {
+          "trait": "smoker",
+          "polarity": "must_not"
+        }
+      ],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "smoker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "smoker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 16,
+    "lang": "he",
+    "field": "traits",
+    "text": "שלא יעשן",
+    "expected": {
+      "dealbreakers": [
+        {
+          "trait": "smoker",
+          "polarity": "must_not"
+        }
+      ],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "smoker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "smoker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 17,
+    "lang": "en",
+    "field": "traits",
+    "text": "I don't smoke",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {},
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 18,
+    "lang": "he",
+    "field": "traits",
+    "text": "אני לא שותה",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "heavy_drinker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": false,
+        "pass": false
+      }
+    }
+  },
+  {
+    "id": 19,
+    "lang": "en",
+    "field": "traits",
+    "text": "must be ambitious",
+    "expected": {
+      "dealbreakers": [
+        {
+          "trait": "ambitious",
+          "polarity": "must"
+        }
+      ],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "ambitious",
+              "polarity": "must"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "ambitious",
+              "polarity": "must"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 20,
+    "lang": "he",
+    "field": "traits",
+    "text": "בלי שתיינים",
+    "expected": {
+      "dealbreakers": [
+        {
+          "trait": "heavy_drinker",
+          "polarity": "must_not"
+        }
+      ],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "heavy_drinker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "heavy_drinker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 21,
+    "lang": "en",
+    "field": "traits",
+    "text": "I love quiet nights in",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 22,
+    "lang": "he",
+    "field": "traits",
+    "text": "לא מוכנה למעשן כבד או מישהו ששותה הרבה",
+    "expected": {
+      "dealbreakers": [
+        {
+          "trait": "smoker",
+          "polarity": "must_not"
+        },
+        {
+          "trait": "heavy_drinker",
+          "polarity": "must_not"
+        }
+      ],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "heavy_drinker",
+              "polarity": "must_not"
+            },
+            {
+              "trait": "smoker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "smoker",
+              "polarity": "must_not"
+            },
+            {
+              "trait": "heavy_drinker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 23,
+    "lang": "en",
+    "field": "traits",
+    "text": "someone with pets is a dealbreaker for me",
+    "expected": {
+      "dealbreakers": [
+        {
+          "trait": "has_pets",
+          "polarity": "must_not"
+        }
+      ],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "has_pets",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "has_pets",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  },
+  {
+    "id": 24,
+    "lang": "he",
+    "field": "traits",
+    "text": "אני מעשנת ומחפשת מישהו שזה לא מפריע לו",
+    "expected": {
+      "dealbreakers": [],
+      "excludedMaritalStatuses": []
+    },
+    "models": {
+      "gpt-4o-mini": {
+        "got": {
+          "dealbreakers": [
+            {
+              "trait": "smoker",
+              "polarity": "must_not"
+            }
+          ],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": false,
+        "pass": false
+      },
+      "gpt-4o": {
+        "got": {
+          "dealbreakers": [],
+          "excludedMaritalStatuses": []
+        },
+        "maritalOk": true,
+        "dealbreakersOk": true,
+        "pass": true
+      }
+    }
+  }
+]
